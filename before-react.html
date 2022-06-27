@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before React</title>
+    <script>
+        function init(){
+       /* let elm = document.createElement("h1");
+        elm.innerHTML = "Welcome to your life";
+        document.getElementById("root").appendChild(elm);*/
+        let elm = document.createElement("ul");
+        let li1 = document.createElement("li").innerHTML = "List item 1";
+        let li2 = document.createElement("li").innerHTML = "List item 2";
+        let li3 = document.createElement("li").innerHTML = "List item 3";
+        let li4 = document.createElement("li").innerHTML = "List item 4";
+        let li5 = document.createElement("li").innerHTML = "List item 5";
+        elm.appendChild(li1)
+        .appendChild(li2)
+        .appendChild(li3)
+        .appendChild(li4)
+        .appendChild(li5)
+        document.getElementById("root").appendChild(elm);
+        }
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</head>
+<body>
+    <div></div>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+        <li>List item 5</li>
+    </ul>
+</body>
+</html>
